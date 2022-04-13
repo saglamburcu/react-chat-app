@@ -23,7 +23,7 @@ function ChatForm() {
   useEffect(() => {
     socket.on("push_data", (response) => {
       console.log(response.message)
-      let item = { message: response.message, fromMe: true }
+      let item = { message: response.message }
       setMessages((prevState) => [...prevState, item])
     })
   }, [])

@@ -1,26 +1,38 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+}
+
 .container {
   width: 1000px;
-  height: 600px;
-  background-color: brown;
-  margin: 50px auto;
+  max-height: 600px;
+  margin: 70px auto;
 }
 
 .form-container {
-  width: 800px;
-  height: 500px;
-  background-color: bisque;
+  width: 790px;
+  height: 400px;
+  background-color: rgb(233, 208, 227);
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
 }
 
 .messageContainer {
-  max-width: 200px;
+  width: max-content;
   height: auto;
-  padding: 10px;
+  padding: 2px 10px;
   margin: 10px;
   border-radius: 10px;
-  background-color: azure;
+  background-color: rgb(221, 239, 243);
+}
+
+.message {
+  max-width: 300px;
 }
 
 form {
@@ -32,14 +44,17 @@ form {
 
 form input {
   width: 800px;
-  height: 20px;
-  padding: 10px;
+  height: 15px;
+  padding: 18px;
+  border: none;
   border-radius: 10px;
+  background-color: rgb(234, 237, 238);
 }
 
 .right {
   margin-left: auto;
-  margin-right: 0; 
+  margin-right: 0;
+  background-color:beige;
 }
 
 

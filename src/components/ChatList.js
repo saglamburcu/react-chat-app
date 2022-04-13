@@ -1,21 +1,24 @@
-import { useChat } from "../context/ChatContext"
+import { useChat } from "../context/ChatContext";
+import ScrollableFeed from 'react-scrollable-feed';
 
 function ChatList() {
 
   const { messages } = useChat();
 
   return (
-    <div className="form-container">
+    <ScrollableFeed forceScroll={true} className="form-container">
       {
         messages.map((item, index) => {
           return (
-            <div className="messageContainer" key={index}>
-              <p>{item.message}</p>
+            <div className={`messageContainer ${item.fromMe ? "right" : ""}`} key={index}>
+              <div className="message">
+                <p>{item.message}</p>
+              </div>
             </div>
           )
         })
       }
-    </div>
+    </ScrollableFeed>
   )
 }
 

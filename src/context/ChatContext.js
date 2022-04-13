@@ -4,8 +4,7 @@ const ChatContext = createContext();
 
 export const ChatProvider = ({ children }) => {
   const [messages, setMessages] = useState([
-    { message: "Message 1" },
-    { message: "Message 2" }
+
   ]);
 
   const values = {
